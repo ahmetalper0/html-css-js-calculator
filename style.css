@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Kanit:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-color: #252525;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    width: 500px;
+    height: 555px;
+    background-color: #181818;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.result {
+    width: 400px;
+    height: 70px;
+    background-color: black;
+    border-radius: 30px;
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    width: 350px;
+    height: 60px;
+    color: #e8e6e3;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: 'Jua';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    overflow: hidden;
+}
+
+.buttons {
+    width: 400px;
+    height: 370px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 85px);
+    column-gap: 20px;
+}
+
+.button {
+    width: 85px;
+    height: 50px;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color: rgb(45, 49, 51);
+    font-family: 'Jua';
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    border-style: none;
+    color: #e8e6e3;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+.button#equals{
+    width: 85px;
+    height: 290px;
+}
+
+#equals {
+    grid-row: span 4;
+}
+
+.button#AC{
+    color: red;
+}
